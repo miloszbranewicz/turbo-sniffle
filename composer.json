@@ -1,0 +1,10 @@
+{
+    "name": "pluginboilerplatevendor/pluginboilerplate",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "Pluginboilerplatevendor\\Pluginboilerplate\\": "src/"
+        }
+    },
+    "require": {}
+}
