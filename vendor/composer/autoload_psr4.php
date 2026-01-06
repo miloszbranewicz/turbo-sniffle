@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Pluginboilerplatevendor\\Pluginboilerplate\\' => array($baseDir . '/src'),
-    'Mago\\' => array($vendorDir . '/carthage-software/mago/composer'),
 );
