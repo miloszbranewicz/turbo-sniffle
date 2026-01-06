@@ -6,5 +6,12 @@
             "Pluginboilerplatevendor\\Pluginboilerplate\\": "src/"
         }
     },
-    "require": {}
+    "require-dev": {
+        "carthage-software/mago": "1.0.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "carthage-software/mago": true
+        }
+    }
 }

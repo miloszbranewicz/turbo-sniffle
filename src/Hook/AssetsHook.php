@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Pluginboilerplatevendor\Pluginboilerplate\Hook;
@@ -26,6 +27,5 @@ final class AssetsHook implements HookInterface
         wp_localize_script($handle, 'pluginboilerplate_vars', [
             'ajax_url' => admin_url('admin-ajax.php'),
         ]);
-
     }
 }

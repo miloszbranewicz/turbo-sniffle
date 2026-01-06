@@ -11,12 +11,20 @@ class ComposerStaticInit90baed1580dc8d103fb891279c277190
         array (
             'Pluginboilerplatevendor\\Pluginboilerplate\\' => 42,
         ),
+        'M' => 
+        array (
+            'Mago\\' => 5,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Pluginboilerplatevendor\\Pluginboilerplate\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Mago\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/carthage-software/mago/composer',
         ),
     );
 

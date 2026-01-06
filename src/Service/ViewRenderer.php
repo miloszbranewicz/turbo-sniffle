@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Pluginboilerplatevendor\Pluginboilerplate\Service;
@@ -17,7 +18,5 @@ final class ViewRenderer
 
         extract($args);
         include $path;
-
     }
-
 }
