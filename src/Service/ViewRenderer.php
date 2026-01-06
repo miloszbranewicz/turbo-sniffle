@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Pluginboilerplatevendor\Pluginboilerplate\Service;
@@ -11,13 +12,11 @@ final class ViewRenderer
     {
         $path = Plugin::getPath("templates/{$templateName}.php");
 
-        if (!file_exists($path)) {
+        if (!\file_exists($path)) {
             throw new \RuntimeException("Template {$templateName} not found");
         }
 
-        extract($args);
+        \extract($args);
         include $path;
-
     }
-
 }

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Pluginboilerplatevendor\Pluginboilerplate\Bootstrap;
@@ -23,7 +24,7 @@ final class Container
     public function exampleService(): ExampleService
     {
         return $this->instances[ExampleService::class] ??= new ExampleService(
-            $this->viewRenderer()
+            $this->viewRenderer(),
         );
     }
 
@@ -31,5 +32,4 @@ final class Container
     {
         return $this->instances[ViewRenderer::class] ??= new ViewRenderer();
     }
-
 }

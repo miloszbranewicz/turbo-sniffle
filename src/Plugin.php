@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Pluginboilerplatevendor\Pluginboilerplate;
@@ -27,17 +28,16 @@ final class Plugin
 
     public static function getPath(string $subPath = ''): string
     {
-        return plugin_dir_path(self::$pluginFile) . ltrim($subPath, '/');
+        return plugin_dir_path(self::$pluginFile) . \ltrim($subPath, '/');
     }
 
     public static function getUrl(string $subPath = ''): string
     {
-        return plugin_dir_url(self::$pluginFile) . ltrim($subPath, '/');
+        return plugin_dir_url(self::$pluginFile) . \ltrim($subPath, '/');
     }
 
     public static function getVersion(): string
     {
         return self::$version;
     }
-
 }
